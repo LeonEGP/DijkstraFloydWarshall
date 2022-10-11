@@ -47,8 +47,6 @@ void dijkstra(vector <vector <int>> matriz, int nodo) {
     }
 
     for (int i = 0; i < matriz.size(); i++) {
-        char letraOrigen = 65 + i;
-        char letraDestino = 65 + nodo;
         if (distancia[i] > 0) {
             cout << "node " << nodo + 1 << " to node " << i + 1 << " : " << distancia[i] << endl;
         }
