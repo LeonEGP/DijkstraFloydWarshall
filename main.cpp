@@ -115,7 +115,7 @@ void floydWarshall(vector <vector <int>> matriz) { //Complejidad Computacional: 
 }
 
 //Función main de ejecución del programa, no recibe valores, retorna un valor 0 al finalizar la ejecución.
-int main() { //Complejidad Computacional: O(1), es una ejecución lineal en el contenido de la función. Dentro de esta ejecución de una sola instancia [constante], se presenta un ciclo for anidado dentro de otro ciclo for [Complejidad Computacional O(n^2)], siendo n un valor aún no definido, pero que espera ser el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
+int main() { //Complejidad Computacional: O(1), es una ejecución lineal en el contenido de la función. Dentro de esta ejecución de una sola instancia [constante], se presenta un ciclo for anidado dentro de otro ciclo for [Complejidad Computacional O(n^2)], siendo n un valor aún no definido, pero que espera ser el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. Lo anterior para llenar la Matriz, a esta matriz se aplican los Algoritmos de Floyd (Complejidad Computacional O(n^3)), y de Dijkstra (Complejidad Computacional O(n^2), pero como se aplicada a cada n, pasa a ser O(n^3)).
 
     //Inicia programa.
     //Declaración e inicialización de variables.
