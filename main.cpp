@@ -35,7 +35,7 @@ int distanciaMinima(vector <int> distancia, vector<bool> visitado) { //Complejid
     return indice;
 }
 
-//Función que implementa el Algoritmo Dijkstra, recibe un vector de vectores de enteros que es la Matriz de Adyacencia y un entero que es el nodo desde el cual se analizan las distancias, imprime la distancia de este nodo a los otros nodos, no tiene valir de retorno. 
+//Función que implementa el Algoritmo Dijkstra, recibe un vector de vectores de enteros que es la Matriz de Adyacencia y un entero que es el nodo desde el cual se analizan las distancias, imprime la distancia de este nodo a los otros nodos, no tiene valor de retorno. 
 void dijkstra(vector <vector <int>> matriz, int nodo) { //Complejidad Computacional: O(n^2), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
 
     //Declaración de variables de la función. 
