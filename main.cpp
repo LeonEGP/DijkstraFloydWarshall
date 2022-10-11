@@ -50,9 +50,9 @@ void dijkstra(vector <vector <int>> matriz, int nodo) { //Complejidad Computacio
 
     distancia[nodo] = 0; //Se omite el nodo el cual se analiza. 
 
-    //Ciclo for anidado dentro de otro ciclo for, que implementa la lógica para la determinación de distancias. Complejidad Computacional: O(n^2), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
+    //Ciclo for anidado dentro de otro ciclo for, que implementa la lógica para la determinación de distancias; se logra la misma complejidad considerando que la función de Distancia Mínima tiene una Complejidad Computacional de O(n). Sumando estos dos hechos, se tiene una complejidad de  O(2(n^2)). Pasando entonces a una Complejidad Computacional: O(n^2), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
     for (int i = 0; i < matriz.size(); i++) { //Complejidad Computacional: O(n), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
-        int minimo = distanciaMinima(distancia, visitado);
+        int minimo = distanciaMinima(distancia, visitado); //Complejidad Computacional: O(n), siendo n la longitud del vector de distancias, donde dicha n es el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
         visitado[minimo] = true;
         for (int j = 0; j < matriz.size(); j++) { //Complejidad Computacional: O(n), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
             if (!visitado[j] && matriz[minimo][j] && distancia[minimo] != 999999999 && distancia[minimo] + matriz[minimo][j] < distancia[j]) {
