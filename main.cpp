@@ -16,7 +16,7 @@ void imprimirMatriz(vector <vector <int>> matriz) {
     }
 }
 
-void floyd(vector <vector <int>> matriz) {
+void floydWarshall(vector <vector <int>> matriz) {
     cout << "Floyd :" << endl;
     vector <vector <int>> distancia = matriz;
     for (int i = 0; i < matriz.size(); i++) {
@@ -51,6 +51,6 @@ int main() {
         }
         matriz.push_back(auxiliar);
     }
-    floyd(matriz);
+    floydWarshall(matriz);
     return 0;
 }
