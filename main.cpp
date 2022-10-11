@@ -70,7 +70,7 @@ void dijkstra(vector <vector <int>> matriz, int nodo) { //Complejidad Computacio
 }
 
 //Función que realiza el Algoritmo de Dijkstra para cada nodo de la Matriz de Adyacencia, recibe un vector de vectores de enteros que es la Matriz de Adyacencia, imprime la distancia de cada nodo para los otros nodos restantes, no tiene valor de retorno.
-void edsgerDijkstra(vector <vector <int>> matriz) { //Complejidad Computacional: O(n^3), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. Debido a que se ejecuta el Algoritmo de Dijkstra [Complejidad Computacional de O(n^2)] para cada n.
+void edsgerDijkstra(vector <vector <int>> matriz) { //Complejidad Computacional: O(n^3), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. Debido a que se ejecuta el Algoritmo de Dijkstra [Complejidad Computacional de O(n^2)] para cada n, logrando así dicha complejidad.
 
     //Se muestra qué algoritmo se está desarrollando. 
     cout << "Dijkstra :" << endl;
@@ -144,9 +144,9 @@ int main() { //Complejidad Computacional: O(1), es una ejecución lineal en el c
     }
 
     //Implementación del Algoritmo de Edsger Wybe Dijkstra.
-    edsgerDijkstra(matriz);
+    edsgerDijkstra(matriz); //Complejidad Computacional: O(n^3), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. Debido a que se ejecuta el Algoritmo de Dijkstra [Complejidad Computacional de O(n^2)] para cada n, logrando así dicha complejidad.
     //Implementación del Algoritmo de Robert W. Floyd y Stephen Warshall.
-    floydWarshall(matriz);
+    floydWarshall(matriz);  //Complejidad Computacional: O(n^3), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia.  
 
     //Termina programa.
     return 0;
