@@ -70,14 +70,14 @@ void dijkstra(vector <vector <int>> matriz, int nodo) { //Complejidad Computacio
 }
 
 //Función que realiza el Algoritmo de Dijkstra para cada nodo de la Matriz de Adyacencia, recibe un vector de vectores de enteros que es la Matriz de Adyacencia, imprime la distancia de cada nodo para los otros nodos restantes, no tiene valor de retorno.
-void edsgerDijkstra(vector <vector <int>> matriz) {
+void edsgerDijkstra(vector <vector <int>> matriz) { //Complejidad Computacional: O(n^3), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. Debido a que se ejecuta el Algoritmo de Dijkstra [Complejidad Computacional de O(n^2)] para cada n.
 
     //Se muestra qué algoritmo se está desarrollando. 
     cout << "Dijkstra :" << endl;
 
-    //Ciclo for que ejecuta el Algoritmo de Dijkstra, para cada nodo de la Matriz de Adyacencia. 
+    //Ciclo for que ejecuta el Algoritmo de Dijkstra, para cada nodo de la Matriz de Adyacencia. Como poseé la función es de Complejidad O(n^2), dentro de un ciclo for de Complejidad O(n), se logra una Complejidad Computacional de O(n^3).
     for (int i = 0; i < matriz.size(); i++) { //Complejidad Computacional: O(n), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia. 
-        dijkstra(matriz, i);
+        dijkstra(matriz, i); //Complejidad Computacional: O(n^2), siendo n el valor de longitud de cada n arreglo [vector (de longitud n)] dentro de la Matriz de Adyacencia.
     }
 }
 
